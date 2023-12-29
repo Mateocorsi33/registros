@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://granjalospibes:Lagranjaong@cluster0.7w9iw3b.mongodb.net/registros');
+mongoose.connect(process.env.MONGO_URI);
 
 const objetobd = mongoose.connection
 
