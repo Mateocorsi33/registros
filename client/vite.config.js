@@ -6,10 +6,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist/client',
-    // rollupOptions: {
-    //   input: '/src/main.jsx' // Cambia esto por la ruta correcta de tu archivo de entrada
-    // },
+    outDir: 'dist/client/assets',
+    rollupOptions: {
+      input: '/src/main.jsx'
+    },
   },
   css: {
     postcss: './postcss.config.js',
