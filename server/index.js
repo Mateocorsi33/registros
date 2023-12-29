@@ -22,6 +22,12 @@ app.use('/api', routes);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// Middleware para archivos JavaScript
+app.get('*.js', function(req, res, next) {
+  res.setHeader('Content-Type', 'application/javascript');
+  next();
+});
+
 // Ruta para agregar nuevos registros
 app.use(express.json());
 app.post('/api/registros', routes);
