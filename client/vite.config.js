@@ -7,9 +7,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist/client',
-    rollupOptions: {
-      input: './index.html' // Cambia esto por la ruta correcta de tu archivo de entrada
-    },
+    // rollupOptions: {
+    //   input: '/src/main.jsx' // Cambia esto por la ruta correcta de tu archivo de entrada
+    // },
   },
   css: {
     postcss: './postcss.config.js',
