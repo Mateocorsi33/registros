@@ -3,7 +3,7 @@ import { FaChevronDown, FaImage, FaTrash } from 'react-icons/fa';
 import toast , { Toaster } from 'react-hot-toast';
 import uniquid from 'uniquid';
 import axios from 'axios';
-import apiUrl from './apiConfig';
+import apiUrl from '../../../../apiConfig';
 
 const FormIngresos = () => {
 

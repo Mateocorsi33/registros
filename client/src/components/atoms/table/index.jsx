@@ -3,7 +3,7 @@ import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { FaEdit , FaTrash , FaEye  } from 'react-icons/fa';
 import axios from 'axios'
 import moment from 'moment';
-import apiUrl from './apiConfig';
+import apiUrl from '../../../../apiConfig';
 
 const DataTable = ({ rows, columns }) => {
 
