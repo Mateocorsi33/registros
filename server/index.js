@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 
-const archivoBD = require('./conectDB');
+const archivobd = require('./conectdb');
 const routes = require('./registros');
 
 // Middleware CORS
