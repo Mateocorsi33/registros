@@ -7,9 +7,6 @@ import Home from '../src/components/pages/home';
 import Registros from './components/pages/registros/index.jsx';
 import Ingresos from './components/pages/ingresos/index.jsx';
 import Inicio from './components/pages/inicio/index.jsx';
-import axios from 'axios';
-axios.defaults.baseURL = `http://localhost:5000/api/`;
-
 
 
 const router = createBrowserRouter([
@@ -36,9 +33,6 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
-
-
 
 
 
