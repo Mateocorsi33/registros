@@ -28,14 +28,7 @@ app.get('*.js', function(req, res, next) {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'dist/client'), {
-  setHeaders: (res, path) => {
-    if (path.endsWith('.js')) {
-      res.setHeader('Content-Type', 'application/javascript');
-    }
-    // Puedes añadir más condiciones para otros tipos de archivos si es necesario
-  },
-}));
+app.use(express.static(path.join(__dirname, 'dist', 'client')));
 
 // Ruta para agregar nuevos registros
 app.use(express.json());
