@@ -8,7 +8,7 @@ const routes = require('./registros');
 
 // Middleware CORS
 const corsOptions = {
-  origin: 'https://registros-beta.vercel.app',
+  origin: '*',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
