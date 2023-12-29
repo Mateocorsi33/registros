@@ -28,6 +28,15 @@ app.get('*.js', function(req, res, next) {
   next();
 });
 
+app.use(express.static(path.join(__dirname, 'public'), {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript');
+    }
+    // Puedes añadir más condiciones para otros tipos de archivos si es necesario
+  },
+}));
+
 // Ruta para agregar nuevos registros
 app.use(express.json());
 app.post('/api/registros', routes);
