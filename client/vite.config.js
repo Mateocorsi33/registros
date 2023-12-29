@@ -6,13 +6,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist', // Asegúrate de que esté apuntando al directorio correcto
-    assetsDir: '.',
+    outDir: './public',
   },
   css: {
     postcss: './postcss.config.js',
   },
 });
-
-
-// outDir: '../public/client',
