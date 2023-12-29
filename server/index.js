@@ -28,7 +28,7 @@ app.get('*.js', function(req, res, next) {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'src'), {
+app.use(express.static(path.join(__dirname, 'dist/client'), {
   setHeaders: (res, path) => {
     if (path.endsWith('.js')) {
       res.setHeader('Content-Type', 'application/javascript');

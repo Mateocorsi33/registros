@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: './src',
+    outDir: 'dist/client',
   },
   css: {
     postcss: './postcss.config.js',
