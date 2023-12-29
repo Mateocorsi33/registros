@@ -8,7 +8,7 @@ const routes = require('./registros');
 
 // Middleware CORS
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: 'https://registros-beta.vercel.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
   res.end('Bienvenidos al servidor Back-End Node.js. Corriendo...');
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`El servidor está corriendo correctamente en el puerto ${PORT}`);
 });

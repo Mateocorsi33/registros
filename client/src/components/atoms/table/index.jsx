@@ -3,13 +3,14 @@ import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { FaEdit , FaTrash , FaEye  } from 'react-icons/fa';
 import axios from 'axios'
 import moment from 'moment';
+import apiUrl from './apiConfig';
 
 const DataTable = ({ rows, columns }) => {
 
   const [dataRegistros, setDataRegistros] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/registros/obtener')
+    axios.get(`${apiUrl}/registros/obtener`)
       .then(res => {
         console.log('Datos recibidos:', res.data);
         setDataRegistros(res.data);

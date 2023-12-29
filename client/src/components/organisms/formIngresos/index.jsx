@@ -3,6 +3,7 @@ import { FaChevronDown, FaImage, FaTrash } from 'react-icons/fa';
 import toast , { Toaster } from 'react-hot-toast';
 import uniquid from 'uniquid';
 import axios from 'axios';
+import apiUrl from './apiConfig';
 
 const FormIngresos = () => {
 
@@ -63,7 +64,7 @@ const handleChange = (event, setStateFunction) => {
     console.log('Datos a enviar: ', formData);
 
     try {
-        const res = await axios.post('http://localhost:5000/api/registros', formData, {
+        const res = await axios.post(`${apiUrl}/registros`, formData, {
             headers: { 'Content-Type': 'multipart/form-data' },
         });
 
