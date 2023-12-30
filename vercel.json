@@ -1,10 +1,10 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "vite build",
-        "use": "@vercel/node"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/main.jsx",
+      "use": "@vercel/node"
+    }
+  ],
+  "output": "dist"
+}
