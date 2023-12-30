@@ -16,7 +16,7 @@
       "dest": "/client/$0"
     },
     {
-      "src": "/(.*)",
+      "src": "/(?!.*\\.(js|json)).*",
       "dest": "/client/index.html"
     }
   ]
