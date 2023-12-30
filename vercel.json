@@ -22,7 +22,7 @@
     {
       "src": "/.*\\.jsx",
       "headers": {
-        "Content-Type": "application/javascript; charset=utf-8"
+        "Content-Type": "text/javascript; charset=utf-8"
       },
       "dest": "/client/$0"
     },
