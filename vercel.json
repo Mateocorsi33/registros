@@ -9,6 +9,10 @@
       "dest": "/client/static/$1"
     },
     {
+      "src": "/src/(.*)",
+      "dest": "/client/src/$1"
+    },
+    {
       "src": "/.*\\.(js|json)",
       "headers": {
         "Content-Type": "application/javascript; charset=utf-8"
@@ -16,7 +20,7 @@
       "dest": "/client/$0"
     },
     {
-      "src": "/(?!.*\\.(js|json)).*",
+      "src": "/",
       "dest": "/client/index.html"
     }
   ]
