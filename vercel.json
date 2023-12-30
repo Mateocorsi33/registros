@@ -20,6 +20,13 @@
       "dest": "/client/$0"
     },
     {
+      "src": "/.*\\.jsx",
+      "headers": {
+        "Content-Type": "application/javascript; charset=utf-8"
+      },
+      "dest": "/client/$0"
+    },
+    {
       "src": "/",
       "dest": "/client/index.html"
     }
