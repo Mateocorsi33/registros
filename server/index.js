@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
+const path = require('path');
 
 const archivobd = require('./conectdb');
 const routes = require('./registros');
